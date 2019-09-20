@@ -18,22 +18,6 @@ void insert(int x){
 	temp->link = head;
 	head = temp;
 }
-void sort(){
-	struct Node*i;
-	struct Node*j;
-	int temp;
-	i = head;
-	for(i = head; i != NULL; i =i->link){
-		for(j = i->link; j!=NULL;j =j->link){
-			if(i->data > j->data){
-				temp = i->data;
-				i->data = j->data;
-				j->data = temp;
-			}
-		}
-	}
-}
-
 
 void delete(int x){
 
